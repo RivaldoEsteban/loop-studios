@@ -98,19 +98,18 @@ ul li a  {
 }
 .image-a {
   animation-name: image;
-  animation-duration: 2s;
-  animation-iteration-count: ;
+  animation-duration: 3s;
   animation-timing-function: linear;
   animation-fill-mode:backwards;
 }
 
 @keyframes image {
   0%{
-    transform: skew(0deg)  translate(-100px);
+    transform: skew(0deg)  translate(-2000px);
 
   }
   100%{
-    transform: skew(0deg)  translate(100px);
+    /* transform: skew(0deg)  translate(100px); */
     border-radius: 20px;
     animation: step-end;
   }
