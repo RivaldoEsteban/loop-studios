@@ -42,32 +42,24 @@ ul li a  {
   margin: 100px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
-.vr-text {
-  /* text-align: end; */
-  padding: 30px;
+.image-hero {
   /* border: 1px solid red; */
-  height: 200px;
-  position: relative;
-  animation-name: vr-text;
-  animation-duration: 2s;
+  transform: skewX(10deg);
+  animation-name: hero;
+  animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-
 }
-@keyframes vr-text{
-  0%{
-
-  }
-  100%{
-    top: 241px;
-    right: 150px;
-    background: white;
-    max-width: 400px;
-  }
+.vr-text {
+  padding: 30px;
+  height: 200px;
+  position: relative;
+  top: 241px;
+  right: 150px;
+  background: white;
+  max-width: 400px;
 }
-
 .vr-text h1 {
   font-size: 45px;
   text-transform: uppercase;
@@ -107,18 +99,18 @@ ul li a  {
 .image-a {
   animation-name: image;
   animation-duration: 2s;
-  animation-delay: 3s;
-  animation-iteration-count: initial;
+  animation-iteration-count: ;
   animation-timing-function: linear;
   animation-fill-mode:backwards;
 }
 
 @keyframes image {
   0%{
-    /* border: 1px solid black ; */
-    transform: skew(0deg)  translate(100px);
+    transform: skew(0deg)  translate(-100px);
+
   }
   100%{
+    transform: skew(0deg)  translate(100px);
     border-radius: 20px;
     animation: step-end;
   }
