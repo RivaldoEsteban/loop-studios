@@ -91,20 +91,23 @@ ul li a  {
   justify-content: space-between;
   margin-bottom: 60px;
 }
-.image:hover {
+.image-a {
   animation-name: image;
-  animation-duration: 1s;
-  /* animation-iteration-count: infinite; */
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-iteration-count: initial;
   animation-timing-function: linear;
+  animation-fill-mode:backwards;
 }
 
 @keyframes image {
   0%{
-    border: 1px solid black ;
+    /* border: 1px solid black ; */
+    transform: skew(0deg)  translate(100px);
   }
   100%{
     border-radius: 20px;
-    transform: skew(10deg) translate(100px);
+    animation: step-end;
   }
 }
 .footer {
